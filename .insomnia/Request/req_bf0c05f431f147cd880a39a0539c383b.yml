@@ -1,10 +1,10 @@
 _id: req_bf0c05f431f147cd880a39a0539c383b
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1687462217472
+modified: 1687533747127
 created: 1682984634596
 url: "{{ _.graphqlUrl }}"
-name: gql login
+name: login
 description: ""
 method: POST
 body:

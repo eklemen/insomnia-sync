@@ -1,10 +1,10 @@
 _id: req_5a4165b683bf40e09cb1c41346945906
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1683162034511
+modified: 1687533769426
 created: 1682984634589
 url: "{{ _.graphqlUrl }}"
-name: gql getAlbumsForChild
+name: getAlbumsForChild
 description: ""
 method: POST
 body:

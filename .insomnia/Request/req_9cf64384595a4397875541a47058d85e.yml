@@ -1,10 +1,10 @@
 _id: req_9cf64384595a4397875541a47058d85e
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1683162027515
+modified: 1687533766001
 created: 1682984634590
 url: "{{ _.graphqlUrl }}"
-name: gql getChildren
+name: getChildren
 description: ""
 method: POST
 body:

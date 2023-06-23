@@ -1,10 +1,10 @@
 _id: req_7126917364c0468e83f1853afba8b38a
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1687462151232
+modified: 1687533750993
 created: 1687396312164
 url: "{{ _.graphqlUrl }}"
-name: gql forgotPassword
+name: forgotPassword
 description: ""
 method: POST
 body:

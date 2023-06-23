@@ -1,10 +1,10 @@
 _id: req_25ece45489004290a049a5fe9fd2ff91
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1683162046434
+modified: 1687533779183
 created: 1682984634586
 url: "{{ _.graphqlUrl }}"
-name: gql deletePhotos
+name: deletePhotos
 description: ""
 method: POST
 body:

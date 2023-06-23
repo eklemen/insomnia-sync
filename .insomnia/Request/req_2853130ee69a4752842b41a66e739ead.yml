@@ -1,10 +1,10 @@
 _id: req_2853130ee69a4752842b41a66e739ead
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1685037004981
+modified: 1687533735489
 created: 1682984634597
 url: "{{ _.graphqlUrl }}"
-name: gql register
+name: register
 description: ""
 method: POST
 body:

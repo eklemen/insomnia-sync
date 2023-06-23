@@ -1,10 +1,10 @@
 _id: req_240b68ab30614468a197b41a2f2c7385
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1683162055056
+modified: 1687533788743
 created: 1682984634583
 url: "{{ _.graphqlUrl }}"
-name: gql assignPhotosToAnotherChild
+name: assignPhotosToAnotherChild
 description: ""
 method: POST
 body:
