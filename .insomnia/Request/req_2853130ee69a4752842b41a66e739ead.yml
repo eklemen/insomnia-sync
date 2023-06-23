@@ -1,0 +1,31 @@
+_id: req_2853130ee69a4752842b41a66e739ead
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1685037004981
+created: 1682984634597
+url: "{{ _.graphqlUrl }}"
+name: gql register
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: AuthUserInput) {\n    registerUser (input:
+    $input)
+    {\n        success\n\t\t\t\terror\n    }\n}","variables":{"input":{"email":"ejklemen+14@gmail.com","password":"Password1@"}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: true
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmlhIiwic3ViIjoiZ3Vlc3MiLCJpYXQiOjE2NzcyODUzODAsImV4cCI6MTY3Nzg5MDE4MH0.0BMkarID51j68OsyIVU0UD7Vxcx1OhHB1sDsUTfUze0
+  prefix: ""
+metaSortKey: -1682984634597
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

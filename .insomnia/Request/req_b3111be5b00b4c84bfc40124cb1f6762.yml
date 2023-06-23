@@ -1,0 +1,42 @@
+_id: req_b3111be5b00b4c84bfc40124cb1f6762
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1686187292522
+created: 1682984634582
+url: "{{ _.baseUrl }}/photo/upload"
+name: save image
+description: ""
+method: POST
+body:
+  mimeType: multipart/form-data
+  params:
+    - type: file
+      name: file
+      disabled: false
+      fileName: /Users/evanklemen/Desktop/test1.jpg
+      id: pair_091dfbc5fa83437fbad63c2c33cdf421
+    - type: text
+      name: objectKey
+      disabled: false
+      value: d9921c6a-1e8e-431c-b51a-d2e39f19295h
+      id: pair_88d570b02d3646128788fe47232773e4
+    - type: text
+      name: childId
+      disabled: false
+      value: a9921c6a-0e8e-431c-b51a-d2e39f19295e
+      id: pair_2c6544baa0cf4879bfe2b186d5e1141c
+parameters: []
+headers: []
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.accessToken}}"
+  prefix: ""
+metaSortKey: -1682984634582
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

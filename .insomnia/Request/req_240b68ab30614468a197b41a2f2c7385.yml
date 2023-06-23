@@ -1,0 +1,33 @@
+_id: req_240b68ab30614468a197b41a2f2c7385
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162055056
+created: 1682984634583
+url: "{{ _.graphqlUrl }}"
+name: gql assignPhotosToAnotherChild
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: AssignPhotosToAnotherChildInput)
+    {\n    assignPhotosToAnotherChild (input:
+    $input)\n}","variables":"{\n    \"input\": {\n        \"childId\":
+    \"5fc04c2c-79e8-4ebf-8d57-f794b6af0b83\",\n        \"photoIds\":
+    [\"2432d1c6-4dfd-4448-8b9e-83e411a4085b\"]\n    }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634583
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

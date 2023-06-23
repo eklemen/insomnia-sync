@@ -1,0 +1,33 @@
+_id: req_9cf64384595a4397875541a47058d85e
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162027515
+created: 1682984634590
+url: "{{ _.graphqlUrl }}"
+name: gql getChildren
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query {\n    getUser
+    {\n        id,\n        email,\n        account
+    {\n            id\n            children
+    {\n                id\n                name\n                 albums
+    {\n                    id\n                }\n            }\n        }\n    }\n}","variables":"{\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634590
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

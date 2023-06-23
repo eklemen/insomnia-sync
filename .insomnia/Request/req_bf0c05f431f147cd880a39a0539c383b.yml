@@ -1,0 +1,26 @@
+_id: req_bf0c05f431f147cd880a39a0539c383b
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1687462217472
+created: 1682984634596
+url: "{{ _.graphqlUrl }}"
+name: gql login
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: AuthUserInput) {\n    login (input: $input)
+    {\n\t\t\taccessToken\n\t\t\t\tidToken\n\t\t\t\texpiresIn\n\t\t\t\trefreshToken\n    }\n}","variables":{"input":{"email":"ejklemen+12@gmail.com","password":"Password1@"}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1682984634596
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

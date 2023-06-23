@@ -1,0 +1,27 @@
+_id: req_a91a800256a343cc83c7e88f79fbae3d
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1687462205084
+created: 1687461578916
+url: "{{ _.graphqlUrl }}"
+name: gql confirmForgotPassword
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: ConfirmForgotPasswordInput)
+    {\n    confirmForgotPassword (input: $input)
+    {\n\t\tsuccess\n\t}\n}\n","variables":{"input":{"email":"ejklemen+12@gmail.com","password":"Password1@","confirmationCode":"453972"}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1682984634593
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

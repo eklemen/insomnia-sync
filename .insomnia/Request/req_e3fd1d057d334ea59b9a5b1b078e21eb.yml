@@ -1,0 +1,33 @@
+_id: req_e3fd1d057d334ea59b9a5b1b078e21eb
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162052312
+created: 1682984634584
+url: "{{ _.graphqlUrl }}"
+name: gql assignPhotosToAlbum
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: AssignPhotosToAlbumInput)
+    {\n    assignPhotosToAlbum (input:
+    $input)\n}","variables":"{\n    \"input\": {\n        \"albumId\":
+    \"8270280e-f0bd-463e-b69f-683084a58da4\",\n        \"photoIds\":
+    [\"0073b463-151e-4fc9-9061-6c5e3063709a\"]\n    }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634584
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

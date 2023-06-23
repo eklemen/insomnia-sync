@@ -1,0 +1,31 @@
+_id: req_f5eb2ea4d39643559c45ee8f114dc887
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1687390209238
+created: 1682984634585
+url: "{{ _.graphqlUrl }}"
+name: gql createChild
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: CreateChildInput!) {\n    createChild (input:
+    $input)
+    {\n        id\n        name\n        dateOfBirth\n    }\n}","variables":{"input":{"name":"Scooter3"}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.accessToken }}"
+  prefix: ""
+metaSortKey: -1682984634585
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

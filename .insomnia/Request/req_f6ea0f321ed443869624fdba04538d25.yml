@@ -1,0 +1,31 @@
+_id: req_f6ea0f321ed443869624fdba04538d25
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162043063
+created: 1682984634587
+url: "{{ _.graphqlUrl }}"
+name: gql getPilePhotos
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query
+    {\n    getPilePhotos{\n        id,\n        name,\n        photos
+    {\n            id,\n            bucketName,\n            objectKey,\n            thumbnailKey,\n            presignedUrl,\n            description,\n            dateOfPhoto,\n        }\n    }\n}","variables":"{\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634587
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

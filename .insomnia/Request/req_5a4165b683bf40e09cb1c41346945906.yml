@@ -1,0 +1,34 @@
+_id: req_5a4165b683bf40e09cb1c41346945906
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162034511
+created: 1682984634589
+url: "{{ _.graphqlUrl }}"
+name: gql getAlbumsForChild
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query($input: GetAlbumsForChildInput)
+    {\n    getAlbumsForChild(input: $input)
+    {\n        id,\n        name,\n        description,\n        photos
+    {\n            id,\n            bucketName,\n            objectKey,\n            thumbnailKey,\n            description,\n            presignedUrl,\n        }\n    }\n}","variables":"{\n    \"input\":
+    {\n        \"childId\":
+    \"a9921c6a-0e8e-431c-b51a-d2e39f19295e\"\n    }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634589
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

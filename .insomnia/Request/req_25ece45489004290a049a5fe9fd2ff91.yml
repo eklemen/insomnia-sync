@@ -1,0 +1,33 @@
+_id: req_25ece45489004290a049a5fe9fd2ff91
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162046434
+created: 1682984634586
+url: "{{ _.graphqlUrl }}"
+name: gql deletePhotos
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation deletePhotos ($input: DeletePhotosInput)
+    {\n    deletePhotos(input: $input)
+    {\n        id,\n        bucketName\n        objectKey\n        thumbnailKey\n        presignedUrl\n        description\n    }\n}","variables":"{\n    \"input\":
+    {\n        \"photoIds\": [\"e6beff45-b618-47a0-95b5-3c06193e36a4\",
+    \"5deee19f-69d0-4614-a9d3-15b70f690048\"]\n    }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634586
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

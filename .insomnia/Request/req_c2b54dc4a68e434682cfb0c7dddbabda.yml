@@ -1,0 +1,32 @@
+_id: req_c2b54dc4a68e434682cfb0c7dddbabda
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1683162061115
+created: 1682984634579
+url: "{{ _.graphqlUrl }}"
+name: gql createAlbum
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: CreateChildInput) {\n    createChild (input:
+    $input)
+    {\n        id\n        name\n        dateOfBirth\n    }\n}","variables":"{\n    \"input\":
+    {\n        \"name\": \"Pooter\"\n    }\n}"}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.authToken}}"
+  prefix: ""
+metaSortKey: -1682984634579
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,32 @@
+_id: req_6aadf781ab984dfc88bf2215825e3b6b
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1687309292442
+created: 1682984634592
+url: "{{ _.graphqlUrl }}"
+name: gql getUser
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"query {\n\tgetUser {\n\t\t\tid\n\t\t\temail\n\t\t\taccount
+    {\n\t\t\t\tid\n\t\t\t\tchildren
+    {\n\t\t\t\t\tid\n\t\t\t\t\tname\n\t\t\t\t\talbums
+    {\n\t\t\t\t\t\tid\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n}\n","variables":{}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: false
+  token: "{{ _.accessToken }}"
+  prefix: ""
+metaSortKey: -1682984634592
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,27 @@
+_id: req_7126917364c0468e83f1853afba8b38a
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1687462151232
+created: 1687396312164
+url: "{{ _.graphqlUrl }}"
+name: gql forgotPassword
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: ForgotPasswordInput) {\n    forgotPassword
+    (input: $input)
+    {\n\t\tsuccess\n\t}\n}\n","variables":{"input":{"email":"ejklemen+12@gmail.com"}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication: {}
+metaSortKey: -1682984634594
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

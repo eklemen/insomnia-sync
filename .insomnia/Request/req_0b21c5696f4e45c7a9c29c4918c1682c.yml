@@ -1,0 +1,31 @@
+_id: req_0b21c5696f4e45c7a9c29c4918c1682c
+type: Request
+parentId: fld_1cce2245e7d0455189b3efa104be14fd
+modified: 1685037034235
+created: 1684612653046
+url: "{{ _.graphqlUrl }}"
+name: gql confirmationCode
+description: ""
+method: POST
+body:
+  mimeType: application/graphql
+  text: '{"query":"mutation ($input: ConfirmationCodeInput)
+    {\n    verifyConfirmationCode (input: $input)
+    {\n        success\n\t\t\t\terror\n    }\n}","variables":{"input":{"email":"ejklemen+14@gmail.com","code":"422917"}}}'
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+authentication:
+  type: bearer
+  disabled: true
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1hcmlhIiwic3ViIjoiZ3Vlc3MiLCJpYXQiOjE2NzcyODUzODAsImV4cCI6MTY3Nzg5MDE4MH0.0BMkarID51j68OsyIVU0UD7Vxcx1OhHB1sDsUTfUze0
+  prefix: ""
+metaSortKey: -1682984634596.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
