@@ -1,7 +1,7 @@
 _id: req_bf0c05f431f147cd880a39a0539c383b
 type: Request
 parentId: fld_1cce2245e7d0455189b3efa104be14fd
-modified: 1687533747127
+modified: 1687536400502
 created: 1682984634596
 url: "{{ _.graphqlUrl }}"
 name: login
@@ -10,7 +10,7 @@ method: POST
 body:
   mimeType: application/graphql
   text: '{"query":"mutation ($input: AuthUserInput) {\n    login (input: $input)
-    {\n\t\t\taccessToken\n\t\t\t\tidToken\n\t\t\t\texpiresIn\n\t\t\t\trefreshToken\n    }\n}","variables":{"input":{"email":"ejklemen+12@gmail.com","password":"Password1@"}}}'
+    {\n\t\t\taccessToken\n\t\t\t\tidToken\n\t\t\t\texpiresIn\n\t\t\t\trefreshToken\n    }\n}","variables":{"input":{"email":"ejklemen+14@gmail.com","password":"Password1@"}}}'
 parameters: []
 headers:
   - name: Content-Type
